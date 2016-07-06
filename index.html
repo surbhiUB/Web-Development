@@ -19,7 +19,7 @@
   	color:white;
   }
   .fixedwidth{
-  	width:1050px;
+  	width:998px;
   	margin:0 auto;
   }
   #logodiv{
@@ -31,7 +31,7 @@
   
   #signindiv{
   	font-weight:bold;
-  	padding:3px 80px 12px 20px;
+  	padding:2px 80px 12px 20px;
   	font-size:0.8em;
   	float:left;
   	border-right:1px solid #990000;
@@ -40,7 +40,126 @@
   	position:relative;
   	top:7px;
   }
-   
+  #topmenudiv{
+  	float:left;
+  }
+  #topmenudiv ul{
+  	margin:0;
+  	padding:0;
+  	
+  }
+  #topmenudiv li{
+  	list-style:none;
+  	font-weight:bold;
+  	font-size:0.8em;
+  	padding:12px 20px 12px 20px;
+  	border-right:1px solid #990000;
+  	height:100%; 
+  	float:left;	
+  }
+  #searchdiv{
+  	float:left;
+  	padding:6px 0 0 8px;
+  }
+  #searchdiv input{
+  	height:25px;
+  	border:none;
+  	font-size:0.9em;
+  	padding-left:10px;
+  	background-image:url("images/magnify.png");
+  	background-repeat:no-repeat;
+  	background-size: 18px 18px;
+  	background-position:right center;
+  } 
+  .break{
+  	clear:both;
+  }
+  #newsbar {
+  	background-color:#990000;
+  	width:100%;
+  	height:90px;
+  	color:white;
+  }
+  #newsbar p{
+  	margin:0;
+  	padding:0;
+  	padding-top:12px;
+  	float:left;
+  }
+  #newsheader{
+  	font-size:2.7em;
+  }
+  #USA{
+  	font-size:0.6em;
+  	padding-left:12px;
+  }
+  #rss{
+  	float:right;
+  	padding-top:30px;
+  	margin-top:5px;
+  }
+  #rss img{
+  	height:13px;
+  	padding-left:2px;
+  }
+  #topicmenu{
+  
+  }
+  #topicmenu ul{
+  background-color:#3E0C0D;
+  padding:5px 0 0 5px;
+  margin:0;
+  height:24px;
+  
+  }
+  #topicmenu li{
+  	list-style:none;
+  	font-size:0.8em;
+  	border-right:1px solid #990000;
+  	padding:1px 6px 0 4px;
+  	float:left;
+  	background-color:none;
+  }
+  .selected{
+  	background-color:#EDEDED;
+  	color:#666666;
+  	height:22px;
+  	position:relative;
+  	top:-4px;
+  	padding-top:5px !important;
+  }
+  #content {
+  	width:100%;
+  	color:#666666;
+  	
+  }
+  .date{
+  	font-weight:bold;
+  }
+  h1{
+  	color:#1F4F82;
+  	font-size:2.2em;
+  }
+  .headlineimg{
+  	float:left;
+  	height:300px;
+  	width:460px;
+  }
+  .newsitem{
+  	position:relative;
+  	left:10px;
+  	top:-15px;
+  	width:200px;
+  	float:left;
+  	font-size:0.9em;
+  }
+  .newsitem a{
+  	color:#1F4F82;
+  	text-decoration:none;
+  }
+  .newsitem a:hover{
+  	text-decoration:underline;
+  }
   </style>
 </head>
 
@@ -53,6 +172,62 @@
 			</div>
 			<div id="signindiv">
 				<img src="images/signin.png" height=22 width=22/> Sign In
+			</div>
+			<div id="topmenudiv">
+				<ul>
+					<li>News</li>
+					<li>Sport</li>
+					<li>Weather</li>
+					<li>IPlayer</li>
+					<li>TV</li>
+					<li>Radio</li>
+					<li>More...</li>
+				</ul>
+			</div>
+			<div id="searchdiv">
+				<input type="text" placeholder="Search"/>
+			</div>	
+	</div>
+	<div class="break"></div>
+			<div id="newsbar">
+			<div class="fixedwidth">
+				<p id="newsheader">NEWS<span id="USA">USA</span></p>	
+				
+			<div id="rss">
+				RSS<img src="images/rss.png"/>
+		</div>
+		<div class="break"></div>
+		<div id="topicmenu">
+			<ul>
+				<li>Home</li>
+				<li>World</li>
+				<li class="selected">USA</li>
+				<li>UK</li>
+				<li>England</li>
+				<li>N. Ireland</li>
+				<li>Scotland</li>
+				<li>Sales</li>
+				<li>Business</li>
+				<li>Politics</li>
+				<li>Health</li>
+				<li>Education</li>
+				<li>Technology</li>
+				<li>Sci/Environment</li>
+				<li style="border-right:none">Entertainment & Arts</li>
+			</ul>
+		</div>
+	</div>
+	<div class="break"></div>
+		<div id="content">
+			<div class="fixedwidth">
+				<p><span class="date">4 July 2016 </span>Last updated at 10:48</p>
+				<br/>
+				<h1>Attack near US consulate in Saudi city of Jeddah</h1>
+				<img class="headlineimg "src="images/headlineimg.jpg"/>
+			<div class="newsitem">
+			<p>A suspected suicide bomber has died after detonating a device near the US consulate in the Saudi Arabian city of Jeddah, the interior ministry says.
+</p>
+	<p><a href="">Gunmen storm US mission in Saudi</a></p>
 			</div>
 			</div>
 		</div>
